@@ -31,20 +31,25 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony">
-      <HintPath>libs\0Harmony.dll</HintPath>
-    </Reference>
     <Reference Include="Assembly-CSharp.refstub">
       <HintPath>libs\Assembly-CSharp.refstub.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="BepInEx">
       <HintPath>libs\BepInEx.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="BepInEx.Harmony">
-      <HintPath>libs\BepInEx.Harmony.dll</HintPath>
+    <Reference Include="Mono.Cecil">
+      <HintPath>libs\Mono.Cecil.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="LDBTool">
-      <HintPath>libs\LDBTool.dll</HintPath>
+    <Reference Include="MonoMod.RuntimeDetour">
+      <HintPath>libs\MonoMod.RuntimeDetour.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MonoMod.Utils">
+      <HintPath>libs\MonoMod.Utils.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -54,18 +59,17 @@
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>libs\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.refstub">
       <HintPath>libs\UnityEngine.refstub.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>libs\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="VeinAndVegePlugin.cs" />
-    <Compile Include="Patches\PatchPlanetModelingManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
